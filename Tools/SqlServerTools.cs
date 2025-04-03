@@ -118,7 +118,7 @@ public static class SqlServerTools
     {
         // This is a fallback method and should be avoided in production
         using var connection = new Microsoft.Data.SqlClient.SqlConnection(
-            "Server=sqlforopenaiserver.database.windows.net,1433;Database=sqlforopenai;User Id=barut;Password=Deneme!12345;TrustServerCertificate=True;");
+            "Server=***.database.windows.net,1433;Database=sqlforopenai;User Id=***;Password=***;TrustServerCertificate=True;");
         
         await connection.OpenAsync();
         Debug.WriteLine("Database connection established directly.");

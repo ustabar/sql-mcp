@@ -14,7 +14,7 @@ public class SqlConnectionService
     /// </summary>
     public SqlConnectionService()
     {
-        _connectionString = "Server=sqlforopenaiserver.database.windows.net,1433;Database=sqlforopenai;User Id=barut;Password=Deneme!12345;TrustServerCertificate=True;";
+        _connectionString = "Server=***.database.windows.net,1433;Database=sqlforopenai;User Id=***;Password=***;TrustServerCertificate=True;";
         
         if (string.IsNullOrEmpty(_connectionString))
         {
