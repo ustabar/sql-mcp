@@ -4,10 +4,7 @@ Son zamanlarda Model Context Protocol (MCP) üzerinde kafa patlatırken,
 Github Copilot ile Türkçe doğal dil desteği sunan bir sorgu asistanı 
 nasıl oluşturabilirim diye düşünüyordum. MCP server ile bunun mümkün olduğunu gördüm. 
 
-Geliştirdiğim çözüm, veritabanı sorguları oluşturmayı herkes için kolay hale getirirken 
-(herhangi bir SQL komutu bilmeden "ne vereceksin abine" tarzında sorular ile) 
-başka bir ortama gerek duymadan doğrudan Github Copilot Chat üzerinden 
-veritabanındaki veriyi sorgulamayı mümkün kılmakta.
+Geliştirdiğim çözüm, veritabanı sorguları oluşturmayı herkes için kolay hale getirirken (herhangi bir SQL komutu bilmeden "ne vereceksin abine" tarzında sorular ile) başka bir ortama gerek duymadan doğrudan Github Copilot Chat üzerinden veritabanındaki veriyi sorgulamayı mümkün kılmakta.
 
 
 ## 📌 Projenin Temel Özellikleri:
@@ -34,21 +31,20 @@ veritabanındaki veriyi sorgulamayı mümkün kılmakta.
 
 ## 🔌 VS Code ve GitHub Copilot Entegrasyonu:
 
-- Öncelikle MCP server oluşturma için https://modelcontextprotocol.io/quickstart/server
-  adresindeki rehber uygulama ile projenin çatısı oluşturuldu
+- Öncelikle MCP server oluşturma için https://lnkd.in/dMEUQdHp
+ adresindeki rehber uygulama ile projenin çatısı oluşturuldu
 
 - MCP server olarak oluşturulan ilk projeye Tool özelliği eklendi
 
-- GitHub Copilot Agent Mode ekranında, oluşturulan MCP Server Vs Code a tanıtıldı
-  Bunun için settings içerisine MCP Server tanımı eklendi
+- GitHub Copilot Agent Mode ekranında, oluşturulan MCP Server Vs Code a tanıtıldı. Bunun için settings içerisine MCP Server tanımı eklendi
 
 
-Bu yöntem ile, veritabanı sorguları teknik bilgiye sahip olmayan kullanıcılar için de kolaylaştıran
-bir çözüm ortaya çıkarmış oluyoruz. Sorgunuzu Türkçe ifade ediyorsunuz, sistem bunu SQL'e dönüştürüyor 
-ve sonuçları Github Copilot chat ekranında görebiliyorsunuz.
-Aslında bir yerde "Stay in the flow - Akışta kal" prensibini hayata geçirmiş oluyorsunuz.
-Dilerseniz uygulamayı diğer veritabanı çözümlerine de (Postgres, Cosmos, Prometheus, Elastic, 
-Log Analytics Workspace, ve diğerleri) uygulayabilirsiniz.
+Bu yöntem ile, veritabanı sorgularını teknik bilgiye sahip olmayan kullanıcılar için de kolaylaştıran bir çözüm ortaya çıkarmış olduk. 
 
+Soruları Türkçe soruyorsunuz, Github Copilot bunu SQL komutuna dönüştürüyor ve sonucu Chat ekranında görebiliyorsunuz.
 
-#SQLServer #MCP #DotNet #AITools #ModelContextProtocol #TurkishNLP #DatabaseTools #SoftwareDevelopment #OpenSource #VSCode #GitHubCopilot
+Aslında bir yerde "Stay in the flow - Akışta kal" prensibini hayata geçirmiş oluyorsunuz. Dilerseniz uygulamayı diğer veritabanı çözümlerine de (Postgres, Cosmos, Prometheus, Elastic, Log Analytics Workspace, ve diğerleri) uygulayabilirsiniz.
+
+Kod deposu: https://lnkd.in/dyGMjDUE 
+
+hashtag#SQLServer hashtag#MCP hashtag#DotNet hashtag#AITools hashtag#ModelContextProtocol hashtag#TurkishNLP hashtag#DatabaseTools hashtag#SoftwareDevelopment hashtag#OpenSource hashtag#VSCode hashtag#GitHubCopilot

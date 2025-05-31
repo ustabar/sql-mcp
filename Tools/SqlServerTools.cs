@@ -115,11 +115,13 @@ public static class SqlServerTools
     /// Direct execution for fallback when service is not available
     /// </summary>
     private static async Task<string> ExecuteDirectSqlQuery(string sorgu)
-    {
-        // This is a fallback method and should be avoided in production
-        using var connection = new Microsoft.Data.SqlClient.SqlConnection(
-            "Server=***.database.windows.net,1433;Database=sqlforopenai;User Id=***;Password=***;TrustServerCertificate=True;");
-        
+    {      
+        var connectionString = Environment.GetEnvironmentVariable("SQLCONNECTIONSTRING") ?? 
+            throw new InvalidOperationException("Connection string not set.");
+
+        using var connection = new Microsoft.Data.SqlClient.SqlConnection(connectionString);
+        // set connection string using env variables in the settings mcp configuration
+
         await connection.OpenAsync();
         Debug.WriteLine("Database connection established directly.");
 

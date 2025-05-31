@@ -1,0 +1,1 @@
+Server=sqlforopenaiserver.database.windows.net,1433;Database=sqlforopenai;User Id=barut;Password=Deneme!12345;TrustServerCertificate=True;

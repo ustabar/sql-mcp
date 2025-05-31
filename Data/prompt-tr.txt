@@ -30,7 +30,7 @@ Yanıtını her zaman aşağıdaki JSON formatında ver:
 Yukarıdaki JSON'da, ""ozetiniz"" ifadesini sorgunun özetini yazacağın yerle,
 ""sorgunuz"" ifadesini verileri getirecek Microsoft SQL Server Sorgusu ile,
 ""komutunuz"" ifadesini ise bir sql komutu önereceksen E harfi ile, 
-önermeyeceksen H harfi ile hadeğiştir.
+önermeyeceksen H harfi ile değiştir.
 Her zaman tablo adıyla birlikte şema adını kullan.
 Her zaman sorgu sonuçlarında tüm sütunları dahil et.
 MySQL sözdizimi kullanma.

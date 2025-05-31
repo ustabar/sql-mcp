@@ -1,0 +1,7 @@
+{
+    "jsonInput": {
+        "ozet": "Erkek ve kadın müşteri sayısı, SalesLT.Customer tablosundaki Title alanına göre hesaplanmıştır. 'Mr.' erkek, 'Ms.' kadın olarak kabul edilmiştir.",
+        "sorgu": "SELECT Title AS Cinsiyet, COUNT(*) AS MusteriSayisi FROM SalesLT.Customer WHERE Title IN ('Mr.', 'Ms.') GROUP BY Title",
+        "komut": "E"
+    }
+}

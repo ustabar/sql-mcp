@@ -14,8 +14,9 @@ public class SqlConnectionService
     /// </summary>
     public SqlConnectionService()
     {
-        _connectionString = "Server=***.database.windows.net,1433;Database=sqlforopenai;User Id=***;Password=***;TrustServerCertificate=True;";
-        
+        _connectionString = Environment.GetEnvironmentVariable("SQLCONNECTIONSTRING") ?? 
+                            throw new InvalidOperationException("Connection string not set.");
+
         if (string.IsNullOrEmpty(_connectionString))
         {
             throw new InvalidOperationException("Connection string 'AzureSqlConnection' not found in configuration.");
