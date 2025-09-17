@@ -77,3 +77,9 @@ appsettings.*.json
 # OS specific
 .DS_Store
 Thumbs.db
+
+# ignore text files and Excalidraw files
+*.txt
+*.excalidraw
+MINDMAP.md
+sample001.md

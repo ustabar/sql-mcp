@@ -1,0 +1,23 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "connString",
+      "description": "Connection string for SQL Server"
+    }
+  ],
+  "servers": {
+    "sqlmcp": {
+      "args": [
+        "run",
+        "--project",
+        "C:\\codes\\mcp\\sqlmcp",
+        "--no-build"
+      ],
+      "command": "dotnet",
+      "env": {
+        "SQLCONNECTIONSTRING": "${input:connString}"
+      }
+    }
+  }
+}

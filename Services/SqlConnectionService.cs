@@ -48,4 +48,9 @@ public class SqlConnectionService
             throw new InvalidOperationException($"Failed to open SQL connection: {ex.Message}", ex);
         }
     }
+
+    internal string GetParam(string paramName)
+    {
+        throw new NotImplementedException();
+    }
 }
